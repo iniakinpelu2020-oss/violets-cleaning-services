@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Violets Cleaning Services — Flat-Rate Home Cleaning, Tallahassee FL</title>
+<meta name="description" content="Recurring home cleaning, deep cleans, move-in and move-out turnover across Tallahassee and Leon County. 6+ years, flat rates, zero hidden fees.">
+<meta name="theme-color" content="#241a3a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div class="bloom" id="bloom" aria-hidden="true">
+  <div class="bloom-core" id="bloomCore">
+    <span class="bloom-mark">✿</span>
+    <span class="bloom-name">Violets</span>
+    <span class="bloom-sub">Tallahassee · Leon County</span>
+    <span class="bloom-bar"><i></i></span>
+  </div>
+</div>
+<div class="grain"></div>
+
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="#top"><span class="mark">✿</span> Violets <small>Tallahassee, FL</small></a>
+    <nav class="navlinks">
+      <a href="#services">Services</a>
+      <a href="#prices">Rates</a>
+      <a href="#hours">Hours</a>
+    </nav>
+    <div class="top-actions">
+      <a class="btn btn-line hide-sm" href="tel:+18507164246">+1 850-716-4246</a>
+      <button class="btn btn-ink cart-pill" id="openEstimate" type="button">Estimate <span class="cart-count" id="cartCount">0</span></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow"><i></i>Six years of spotless Tallahassee homes</p>
+        <h1>Your house, reset.<br><em>Every single visit.</em></h1>
+        <p class="lede">Flat-rate cleaning with no hidden lines on the invoice. Pick a clean, size the home, and the number updates as you tap — then book by call or text.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="tel:+18507164246">Book a clean</a>
+          <a class="btn btn-soft" href="sms:+18507164246">Text the team</a>
+        </div>
+        <div class="ratecard">
+          <span class="score">5.0</span>
+          <div>
+            <div class="stars" aria-hidden="true">★★★★★</div>
+            <b>39 Google reviews</b>
+            <small>6+ years · Tallahassee &amp; Leon County</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-stack" id="stackWrap">
+        <div class="stack" id="stack">
+          <div class="card c3">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=700&q=72" alt="Clean, bright living room" onerror="this.style.visibility='hidden'">
+          </div>
+          <div class="card c2">
+            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=700&q=72" alt="Freshly cleaned kitchen counter" onerror="this.style.visibility='hidden'">
+          </div>
+          <div class="card c1">
+            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=700&q=75" alt="Professional cleaner working in a home" onerror="this.style.visibility='hidden'">
+            <span class="tag">Flat rate · no surprises</span>
+          </div>
+        </div>
+        <div class="float-chip a">From $119<span>Standard clean</span></div>
+        <div class="float-chip b">Same week<span>Booking window</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ticker" aria-hidden="true"><div class="ticker-in" id="ticker"></div></div>
+
+  <section class="orbit-sec wrap" id="services">
+    <div class="orbit-head">
+      <div>
+        <p class="kicker">01 — The service ring</p>
+        <h2 class="sec" style="font-size:clamp(2rem,5.4vw,3rem)">Spin it. Pick your clean.</h2>
+        <p class="sub">Six services, one flat price each. Drag the ring, use the arrows, or tap the card facing you.</p>
+      </div>
+      <div class="pills" id="cats" role="group" aria-label="Filter services"></div>
+    </div>
+
+    <div class="orbit-stage" id="stage" role="group" aria-label="Service ring">
+      <div class="ring" id="ring"></div>
+    </div>
+
+    <div class="orbit-ctl">
+      <button class="ctl" id="prev" type="button" aria-label="Previous service">←</button>
+      <div class="dots" id="dots"></div>
+      <button class="ctl" id="next" type="button" aria-label="Next service">→</button>
+    </div>
+    <p class="hint">Tap the front card to open the live estimate.</p>
+  </section>
+
+  <section class="detail wrap" id="detail">
+    <button class="back" id="backBtn" type="button">← Back to the ring</button>
+    <div class="cfg">
+      <div class="cfg-media">
+        <img id="cfgImg" src="" alt="">
+        <span class="cfg-tag" id="cfgCat">Service</span>
+      </div>
+      <div class="cfg-body">
+        <p class="kicker" id="cfgIndex">02 — Service</p>
+        <h2 id="cfgName">Service</h2>
+        <p class="cfg-desc" id="cfgDesc"></p>
+        <div class="cfg-facts">
+          <span id="cfgTime">≈ 2–3 hrs</span>
+          <span id="cfgTown">Tallahassee, FL</span>
+        </div>
+
+        <div class="opt-group"><h4>Home size</h4><div class="opt-row" id="optSize"></div></div>
+        <div class="opt-group"><h4>Condition</h4><div class="opt-row" id="optCond"></div></div>
+        <div class="opt-group"><h4>When</h4><div class="opt-row" id="optSched"></div></div>
+
+        <div class="buy">
+          <div class="price"><span>Your estimate</span><b id="livePrice">$0</b></div>
+          <button class="btn btn-primary" id="addBtn" type="button">Add to estimate</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="more">
+      <p class="kicker">03 — Keep looking</p>
+      <div class="more-grid" id="moreGrid"></div>
+    </div>
+  </section>
+
+  <section class="sheet" id="prices">
+    <div class="wrap">
+      <p class="kicker">04 — Rates</p>
+      <h2 class="sec">Printed flat. Paid flat.</h2>
+      <p class="sub">These are the base numbers for a standard-sized home. Size and condition adjust them live in the estimate, so the quote you see is the quote you get.</p>
+      <ul id="pricelist"></ul>
+      <div class="sheet-cta">
+        <a class="btn btn-primary" href="tel:+18507164246">Call +1 850-716-4246</a>
+        <button class="btn btn-soft" id="openEstimate2" type="button">Open my estimate</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="steps-sec">
+    <div class="wrap">
+      <p class="kicker">05 — How a clean runs</p>
+      <h2 class="sec">Booked today, spotless this week.</h2>
+      <div class="steps">
+        <article class="step">
+          <span class="n">01</span>
+          <h3>Build the estimate</h3>
+          <p>Choose the clean, set the home size and how much detail the place needs. The price moves with every tap.</p>
+        </article>
+        <article class="step">
+          <span class="n">02</span>
+          <h3>Send it over</h3>
+          <p>Call or text the list. You get a confirmed window, a flat number, and a note of anything we need access to.</p>
+        </article>
+        <article class="step">
+          <span class="n">03</span>
+          <h3>Come home to it</h3>
+          <p>We arrive with our own supplies, work room by room, and leave the place the way you'd want to walk into it.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="info-sec" id="hours">
+    <div class="wrap info-grid">
+      <div class="panel">
+        <p class="kicker">06 — Hours</p>
+        <ul class="hours" id="hoursList">
+          <li data-day="Mon"><span>Monday</span><span>8:00 AM – 6:00 PM</span></li>
+          <li data-day="Tue"><span>Tuesday</span><span>8:00 AM – 6:00 PM</span></li>
+          <li data-day="Wed"><span>Wednesday</span><span>8:00 AM – 6:00 PM</span></li>
+          <li data-day="Thu"><span>Thursday</span><span>8:00 AM – 6:00 PM</span></li>
+          <li data-day="Fri"><span>Friday</span><span>8:00 AM – 6:00 PM</span></li>
+          <li data-day="Sat"><span>Saturday</span><span>9:00 AM – 3:00 PM</span></li>
+          <li data-day="Sun" class="off"><span>Sunday</span><span>Closed</span></li>
+        </ul>
+        <p class="tiny">Eastern time. Recurring clients get first pick of the week's slots.</p>
+      </div>
+      <div class="panel">
+        <p class="kicker">07 — Where we clean</p>
+        <div class="chips">
+          <span>Tallahassee</span><span>Leon County</span><span>Midtown</span><span>Killearn</span><span>Southwood</span>
+        </div>
+        <p class="kicker" style="margin-top:26px">08 — Review highlights</p>
+        <ul class="quotes">
+          <li>Six-plus years serving Tallahassee and Leon County homes.</li>
+          <li>Flat-rate transparency — no hidden fees on the invoice.</li>
+          <li>Consistent spotless detail, visit after visit.</li>
+        </ul>
+        <a class="btn btn-ink" href="tel:+18507164246" style="margin-top:20px">Call the team</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap foot">
+      <div>
+        <a class="brand" href="#top"><span class="mark">✿</span> Violets <small>Tallahassee, FL</small></a>
+        <p>Recurring home cleaning, deep cleans and move-out turnover across Tallahassee and Leon County. Flat rates, zero hidden fees.</p>
+      </div>
+      <div class="foot-right">
+        <a href="tel:+18507164246">+1 850-716-4246</a>
+        <small>Mon–Sat · 8:00 AM – 6:00 PM ET</small>
+        <small>© <span id="yr">2026</span> Violets Cleaning Services</small>
+      </div>
+    </div>
+  </footer>
+</main>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-hidden="true" aria-label="Your estimate">
+  <div class="drawer-top">
+    <h3>Your estimate</h3>
+    <button class="x" id="closeDrawer" type="button" aria-label="Close">✕</button>
+  </div>
+  <div class="drawer-body" id="drawerBody"></div>
+  <div class="drawer-foot">
+    <div class="total"><span>Estimated total</span><b id="total">$0</b></div>
+    <a class="btn btn-primary btn-block" id="callBtn" href="tel:+18507164246">Call to book · +1 850-716-4246</a>
+    <a class="btn btn-line btn-block" id="textBtn" href="sms:+18507164246">Text this estimate</a>
+    <p class="fine">Estimate only — confirmed before we start, never after.</p>
+  </div>
+</aside>
+
+<div class="toast" id="toast">Added to your estimate</div>
+
+<div class="mbar">
+  <a class="btn btn-primary" href="tel:+18507164246">Call</a>
+  <button class="btn btn-ink cart-pill" id="openEstimate3" type="button">Estimate <span class="cart-count" id="cartCount2">0</span></button>
+</div>
+
+<script src="/app.js" defer></script>
+</body>
+</html>
